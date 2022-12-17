@@ -1,3 +1,66 @@
 #city p {
     text-indent: 30px;
 }
+
+#home p {
+    text-indent: 30px;
+    font-size: 50px;
+}
+
+.title {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: coral;
+}
+
+#goods-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.goods-card {
+    width: 200px;
+    /*height: 200px;*/
+    border: 1px solid lightcoral;
+    background-color: lightyellow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goods-card * {
+    margin: 0;
+}
+
+.goods-card p {
+    flex: 1 1;
+    text-indent: 10px;
+}
+
+.goods-card p:first-child {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.goods-card p:last-child {
+    font-weight: bold;
+    font-size: 20px;
+    color: coral;
+}
+
+.goods-card .img-container{
+    flex: 10 10 auto;
+    min-width: 0;
+    min-height: 0;
+}
+
+.goods-card .img-container img {
+    width: 100%;
+}
